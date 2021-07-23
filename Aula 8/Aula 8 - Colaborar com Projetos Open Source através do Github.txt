@@ -1,0 +1,12 @@
+Colaborar com projetos open source através do Github.
+
+Fork é para clonar
+Ir no git, projeto que quer colaborar, ir na opção Fork
+O projeto automaticamente vai para o seu repositorio.
+
+Aí nisso, você faz todo o procedimento de clonar esse repositorio para sua máquina e fazer as alterações necessárias.
+Conforme aula 7
+
+Para mandar sua colaboração para o autor do projeto original, cria um new pull request
+
+
