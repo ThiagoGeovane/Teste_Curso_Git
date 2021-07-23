@@ -1,0 +1,28 @@
+Para iniciar o gitbash no diretorio desejado, você deve configurar ele nas propriedades de Git Bash
+Botão direito no Icone do Git Bash e alterar o caminho na opção Iniciar em: Exemplo c:\xampp
+
+Para direcionar no Git Bash onde quer ir, apenas usar comandos do DOS, como cd, dir, ls, clear
+
+Criar um repositorio na pasta que deseja: git init
+
+Para saber o status: git status
+
+Para adicionar os arquivos no diretório: 
+git add nome.txt (Para adicionar determinado arquivo no diretório)
+git add . (Para adicionar todos os arquivos no diretório)
+git add *.txt,php,etc (Para adicionar os arquivos com aquela extensão)
+
+Dando o git add, ele fica na stage area. Para subir o arquivo para o git, precisa comitar.
+
+Para comitar: git commit -m "Mensagem"
+O -m é para enviar uma mensgaem junatemnte com os arquivos, exemplificando o que foi comitado, como fosse uma breve descrição do commit.
+
+1º Fica no repositorio de trabalho, onde você edita e salva.
+2º Qundo você executa o git add, você sobe o arquivo para Stage Area
+3º Quando você executa o git commit, você grava o seu trabalho.
+
+
+Para ignorar determinado arquivo no git: você precisa criar umarquivo chamado: .gitignore
+Nesse arquivo colocar o nome do arquivo que você quer que seja ignorado.
+
+O comando: git commit -a -m "Mensagem" quer dizer que o -a faz/pula etapa do git add

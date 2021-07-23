@@ -1,0 +1,38 @@
+TAGS e BRANCHES
+Tag é uma etiqueta, ponto de atalho para determinado status do sistema. Exemplo: versão 1.0, 1.1
+
+Listar as tags: git tag
+
+Criar Tag: git tag -a <nome da tag> -m "Mensagem"
+	   git tag -a v1.0 -m "Versão 1.0"
+
+Comando -a é para criar a tag de forma anotada.
+
+Comando: git log --pretty=oneline (Todos os commits do sistema, com a chave de referência que é unica e nome)
+
+Para criar uma tag de versão anterior que já foi criada, comando: git tag -a <nome da tag> <chave ou nome> -m "nome da versão"
+
+Para saber mais sobre a tag, comando: git show <nome da tag> Ex.: git show v0.0
+
+Reverter para os arquicos do commit inicial: git checkout v0.0 para voltar ao commit atual git checkout v1.0
+
+Para deletar a versão, você precisa sair da tag. Comando: git checkout master
+Para ver as tags: git tag
+Deletar a tag: git tag -d <nome da tag>
+
+Branche ele permite trabalhar com várias ramificações no sistema. Pode fazer commit em uma ramificação e não vai alterar outra ramificação.
+
+Em um ambiente normal, com o sistema validado e sendo executado, o exemplo que vamos dar seria a criação de ambiente de teste para criarmos um Branche
+
+Vamos criar uma branche teste para o sistema: git branch <nome>
+
+Vamos executar o comando: git checkout <nome da brance> 
+	Para ele fazer a transição dos arquivos para o ambiente de teste.
+
+Para criar o ambiente e enviar: git checkout -b teste
+
+Para trazer as alterações que você fez no ambiente teste para o ambiente master, usar o comando do merge: git merge teste
+
+Para listar todos os branches: git branch
+
+Deletar alguma branche: git branch -d <nome>

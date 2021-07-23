@@ -1,0 +1,7 @@
+Precisa fazer uma configuração inicial para usar .
+
+Abrir o Git Bash
+Digitar os comandos:
+git config --global user.name "nome que você quer usar"
+git config --global user.email "email@com.br"
+

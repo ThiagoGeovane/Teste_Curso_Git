@@ -1,0 +1,11 @@
+VISUALIZAR DE FORMA DETALHADA AS ALTERAÇÕES DOS COMMITS
+
+Para saber o que foi alterado dentro do arquivo que foi modificado: git diff
+Vai mostrar o que foi feito de mudança no arquivo.
+
+Para saber o que foi alterado e o arquivo está na stage area: git diff --staged
+
+Comando para ver o histórico de todos os commits: git log
+Comando para ver o histórico de todos os commits com as diffs de cada commit: git log -p
+Comando para ver o histórico de determinada quantidade com as diffs de cada commit: git log -p -1
+Visualizador de relatório do Git: gitk
