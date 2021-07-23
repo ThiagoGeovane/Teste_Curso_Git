@@ -1,0 +1,17 @@
+DESFAZER OU REVERTER ALGO NO REPOSITORIO
+
+Editar o commit mais recente que eu fiz: git commit --amend -m "Mensagem"
+Para não criar dois commits, apenas editar corrigir o commit anterior.
+
+Para tirar o arquivo da STAGE AREA: git reset HEAD <nome_arquivo>
+Pode ser que você adicionou um arquivo teste, mas que só faz sentido pra você e não quer comitar.
+
+Para descartar as mudanças no diretório de trabalho: git checkout -- <nome_arquivo>
+Pode ser que você commitou e não lembra o que fez e quer descartar essa alteração.
+Fazendo esse comando do checkout o arquivo volta no status antes do commit feito.
+
+Para deletar arquivos: git rm <nome_arquivo>
+
+
+
+

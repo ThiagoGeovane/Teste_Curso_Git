@@ -1,0 +1,26 @@
+Git em rede local, criando um servidor para centralizar os repositórios e acessar tudo através de outras máquinas da rede.
+
+Será criado um ambiente local simulando uma rede. 
+Será feito a busca e envio de arquivos desse servidor.
+
+Para criar um repositorio num ambiente de rede: git init --bare
+
+Para acessar esse repositorio, precisamos fazer um clone dele. Comando: git clone file:////THIAGO/xampp/htdocs/teste-git/cliente1 <nome para diferenciar>
+Como eu fiz o meu repositorio dentro do meu C: coloquei o seguinte caminho para o clone: git clone c:/xampp/htdocs/teste-git cliente1-rede
+
+Feito o clone, vamos tentar criar arquivos e dar git status e git add nesse repositorio mas dentro da pasta "local"
+
+Conectar nesse repositorio atraves do comando: cd cliente1-rede / git status / git add .
+
+Após isso comitar: git commit -m "mensagem"
+
+Para subir os arquivos para "rede", mandar os dados para o servidor e compartilhar com a equipe.
+Precisamos saber o nome do remoto, então: git remote
+
+Para enviar os arquivos: git push origin master
+
+Para atualizar os arquivos que está nos ervidor para local: git pull origin master
+
+O git pull ele faz o merge com os dados que estão no servidor.
+
+ Se você não quiser fazer um merge e apenas um branche, comando deve ser: git fecth origin branch
